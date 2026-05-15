@@ -200,3 +200,6 @@ class EncryptedJSONField(EncryptedFieldMixin, models.JSONField):
         except UnicodeEncodeError:
             pass
         return super().to_python(value)
+
+class EncryptedURLField(EncryptedFieldMixin, models.URLField)
+    pass
